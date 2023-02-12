@@ -8,7 +8,11 @@ public class Test {
 		 
 		 System.out.println(ts);
 		 
-		 System.out.println(ts.equals(ts2));
+		 System.out.println(ts.equals(ts3));
+		 
+		 System.out.println(ts.hashCode());
+		 System.out.println(ts2.hashCode());
+		 System.out.println(ts3.hashCode());
 	}
 
 }
