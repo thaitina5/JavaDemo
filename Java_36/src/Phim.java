@@ -54,5 +54,16 @@ public class Phim {
 		this.ngay = ngay;
 	}
 	
+	//methods
+	public boolean kiemTraGiaReHon(Phim phimKhac) {
+		return this.giaVe < phimKhac.giaVe;
+	}
 	
+	public String layTenHangSX() {
+		return this.hangSX.getTenHangSX();
+	}
+	
+	public double giaSauKhuyenMai(double x) {
+		return this.giaVe*(1-x/100);
+	}
 }
