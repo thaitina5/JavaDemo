@@ -1,15 +1,26 @@
 
 public class SinhVien {
+	private String maSoSinhVien;
 	private String hoTen;
 	private NgaySinh ngaySinh;
-	private float diemTB;
+	private double diemTB;
 	private Lop lop;
 	
-	public SinhVien(String hoTen, NgaySinh ngaySinh, float diemTB, Lop lop) {
+	public SinhVien(String maSoSinhVien, String hoTen, NgaySinh ngaySinh, double diemTB, Lop lop) {
+		this.maSoSinhVien = maSoSinhVien;
 		this.hoTen = hoTen;
 		this.ngaySinh = ngaySinh;
 		this.diemTB = diemTB;
 		this.lop = lop;
+	}
+	
+	
+	public String getMaSoSinhVien() {
+		return maSoSinhVien;
+	}
+
+	public void setMaSoSinhVien(String maSoSinhVien) {
+		this.maSoSinhVien = maSoSinhVien;
 	}
 
 	public String getHoTen() {
@@ -28,11 +39,11 @@ public class SinhVien {
 		this.ngaySinh = ngaySinh;
 	}
 
-	public float getDiemTB() {
+	public double getDiemTB() {
 		return diemTB;
 	}
 
-	public void setDiemTB(float diemTB) {
+	public void setDiemTB(double diemTB) {
 		this.diemTB = diemTB;
 	}
 
@@ -50,10 +61,10 @@ public class SinhVien {
 	}
 	
 	public String kiemTraDau() {
-		return diemTB >= 5 ? "PASSED":"FAILED";
+		return this.diemTB >= 5 ? "PASSED":"FAILED";
 	}
 	
 	public boolean kiemTraNgaySinh(SinhVien sv) {
-		return ngaySinh.equals(sv.ngaySinh);
+		return this.ngaySinh.equals(sv.ngaySinh);
 	}
 }

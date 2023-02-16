@@ -8,8 +8,8 @@ public class Test {
 		Lop l = new Lop("Toan","ChuyenToan");
 		Lop l2 = new Lop("Van","ChuyenVan");
 		
-		SinhVien sv = new SinhVien("ThaiTin", ns, 9, l);
-		SinhVien sv2 = new SinhVien("MyThu", ns2, 4, l2);
+		SinhVien sv = new SinhVien("SV1", "ThaiTin", ns, 9, l);
+		SinhVien sv2 = new SinhVien("SV2", "MyThu", ns2, 4, l2);
 		
 		System.out.println("Ten khoa sv "+ sv.getHoTen() + " dang hoc: "+sv.tenKhoaDangHoc());
 		

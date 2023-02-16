@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class NgaySinh {
 	private int ngay;
@@ -37,6 +38,23 @@ public class NgaySinh {
 	@Override
 	public String toString() {
 		return ngay + "/" + thang + "/" + nam;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(nam, ngay, thang);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		NgaySinh other = (NgaySinh) obj;
+		return nam == other.nam && ngay == other.ngay && thang == other.thang;
 	}
 	
 	
