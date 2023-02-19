@@ -1,7 +1,6 @@
 
 public class HangSanXuat {
-	private String tenHangSX;
-	private String tenQuocGia;
+	private String tenHangSX, tenQuocGia;
 	
 	public HangSanXuat(String tenHangSX, String tenQuocGia) {
 		this.tenHangSX = tenHangSX;
