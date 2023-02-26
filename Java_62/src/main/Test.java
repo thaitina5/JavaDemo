@@ -44,6 +44,7 @@ public class Test {
 		for(int i=0; i<n; i++) {
 			System.out.print(t.pop());
 		}
+		
 	}
 
 }
