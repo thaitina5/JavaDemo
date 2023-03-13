@@ -48,6 +48,12 @@ public class Sach {
 	public void setNamXuatBan(int namXuatBan) {
 		this.namXuatBan = namXuatBan;
 	}
+
+	@Override
+	public String toString() {
+		return "Sach [id_sach=" + id_sach + ", tenSach=" + tenSach + ", giaBan=" + giaBan + ", namXuatBan=" + namXuatBan
+				+ "]";
+	}
 	
 	
 }
