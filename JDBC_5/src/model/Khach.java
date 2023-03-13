@@ -50,6 +50,13 @@ public class Khach {
 	public void setDiaChi(String diaChi) {
 		this.diaChi = diaChi;
 	}
+
+	@Override
+	public String toString() {
+		return "Khach [id_khach=" + id_khach + ", tenKhach=" + tenKhach + ", ngaySinh=" + ngaySinh + ", diaChi="
+				+ diaChi + "]";
+	}
+	
 	
 }
 
